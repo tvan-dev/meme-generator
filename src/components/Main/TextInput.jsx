@@ -1,4 +1,4 @@
-export default function TextInput({memeInfo, setMemeInfo}) {
+export default function TextInput({memeInfo, setMemeInfo, getMeme}) {
 
 function handleChange(event) {
     const {value, name} = event.target
@@ -31,7 +31,7 @@ return (
         </label>
         </div>
 
-        <button>Get a new meme image 🖼️</button>
+        <button onClick={getMeme}>Get a new meme image 🖼️</button>
     </div>
 );
 }
